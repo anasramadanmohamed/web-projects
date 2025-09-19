@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>anas.net — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body[dir="rtl"] { font-family: "Cairo", sans-serif; }
+    body[dir="ltr"] { font-family: "Inter", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased" dir="ltr">
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="text-2xl font-semibold tracking-tight">anas.net</div>
+      <nav class="hidden md:flex gap-6 text-sm opacity-80">
+        <a href="#about" class="hover:underline lang" data-en="About" data-ar="عنّي">About</a>
+        <a href="#projects" class="hover:underline lang" data-en="Projects" data-ar="المشاريع">Projects</a>
+        <a href="#pricing" class="hover:underline lang" data-en="Plans" data-ar="الخطط">Plans</a>
+        <a href="#contact" class="hover:underline lang" data-en="Contact" data-ar="تواصل">Contact</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <button onclick="setLang('en')" class="px-3 py-1 border rounded">EN</button>
+      <button onclick="setLang('ar')" class="px-3 py-1 border rounded">AR</button>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6">
+    <!-- Hero -->
+    <section id="hero" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-12">
+      <div class="md:col-span-2">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight lang"
+          data-en="Hi — I’m Anas Ramadan Mohammed. I build modern digital products and brands."
+          data-ar="مرحباً — أنا أنس رمضان محمد. أبني منتجات رقمية وعلامات تجارية حديثة.">
+          Hi — I’m Anas Ramadan Mohammed. I build modern digital products and brands.
+        </h1>
+        <p class="mt-6 text-lg opacity-85 max-w-2xl lang"
+          data-en="I design and develop professional websites, brand identities, and polished mobile UIs."
+          data-ar="أصمّم وأطوّر مواقع احترافية، هويات بصرية، وواجهات موبايل متقنة.">
+          I design and develop professional websites, brand identities, and polished mobile UIs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-8">
+      <h2 class="text-2xl font-semibold lang" data-en="Selected Projects" data-ar="المشاريع المختارة">Selected Projects</h2>
+      <div class="mt-6 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-xl border border-gray-100 p-5 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Project One — Professional Website" data-ar="المشروع الأول — موقع احترافي">
+            Project One — Professional Website
+          </h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="A fast, responsive site built with React and Tailwind."
+             data-ar="موقع سريع ومتجاوب مبني بـ React و Tailwind.">
+             A fast, responsive site built with React and Tailwind.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-gray-100 p-5 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Project Two — Branding & Design" data-ar="المشروع الثاني — تصميم وهوية">
+            Project Two — Branding & Design
+          </h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="Logo, visual identity and marketing assets for a tech startup."
+             data-ar="شعار وهوية بصرية ومواد تسويقية لشركة ناشئة.">
+             Logo, visual identity and marketing assets for a tech startup.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-gray-100 p-5 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Project Three — Mobile UI" data-ar="المشروع الثالث — واجهة موبايل">
+            Project Three — Mobile UI
+          </h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="High-fidelity mobile app screens and prototypes."
+             data-ar="شاشات تطبيق موبايل عالية الجودة مع نماذج تفاعلية.">
+             High-fidelity mobile app screens and prototypes.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-gray-100 p-5 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Project Four — E-commerce Platform" data-ar="المشروع الرابع — منصة تجارة إلكترونية">
+            Project Four — E-commerce Platform
+          </h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="A scalable online store with payment integration."
+             data-ar="متجر إلكتروني قابل للتوسع مع ربط بوابات دفع.">
+             A scalable online store with payment integration.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-gray-100 p-5 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Project Five — Dashboard" data-ar="المشروع الخامس — لوحة تحكم">
+            Project Five — Dashboard
+          </h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="Interactive analytics dashboard with charts and real-time data."
+             data-ar="لوحة تحكم تفاعلية مع رسوم بيانية وبيانات لحظية.">
+             Interactive analytics dashboard with charts and real-time data.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-8">
+      <h2 class="text-2xl font-semibold lang" data-en="About Me" data-ar="عنّي">About Me</h2>
+      <p class="mt-4 text-gray-700 max-w-3xl lang"
+         data-en="I focus on clean UI, fast performance and clear UX. If you need a modern, professional website or brand — I can help."
+         data-ar="أركز على واجهات نظيفة، أداء سريع وتجربة مستخدم واضحة. إذا كنت تحتاج إلى موقع احترافي أو علامة تجارية حديثة — يمكنني المساعدة.">
+         I focus on clean UI, fast performance and clear UX. If you need a modern, professional website or brand — I can help.
+      </p>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-8">
+      <h2 class="text-2xl font-semibold lang" data-en="Plans" data-ar="الخطط">Plans</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border rounded-xl p-6 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Basic Plan" data-ar="الخطة الأساسية">Basic Plan</h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="Landing page, responsive design, contact form."
+             data-ar="صفحة هبوط، تصميم متجاوب، فورم تواصل.">
+             Landing page, responsive design, contact form.
+          </p>
+        </div>
+        <div class="border rounded-xl p-6 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Professional Plan" data-ar="الخطة الاحترافية">Professional Plan</h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="Multi-page site, branding, performance optimization."
+             data-ar="موقع متعدد الصفحات، هوية بصرية، تحسين الأداء.">
+             Multi-page site, branding, performance optimization.
+          </p>
+        </div>
+        <div class="border rounded-xl p-6 bg-white shadow-sm">
+          <h3 class="font-semibold lang" data-en="Premium Plan" data-ar="الخطة المميزة">Premium Plan</h3>
+          <p class="mt-2 text-sm text-gray-600 lang"
+             data-en="E-commerce, dashboard, advanced integrations."
+             data-ar="تجارة إلكترونية، لوحة تحكم، ربط متقدّم.">
+             E-commerce, dashboard, advanced integrations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12">
+      <div class="rounded-xl bg-white border p-6 shadow-sm max-w-2xl">
+        <h3 class="text-xl font-semibold lang" data-en="Get in Touch" data-ar="تواصل معي">Get in Touch</h3>
+        <p class="mt-2 text-sm text-gray-600 lang"
+           data-en="Email me at anasramadanmohamed2025@gmail.com"
+           data-ar="راسلني عبر البريد الإلكتروني: anasramadanmohamed2025@gmail.com">
+           Email me at anasramadanmohamed2025@gmail.com
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 py-6 border-t bg-white">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm">© <script>document.write(new Date().getFullYear())</script> anas.net</div>
+    </div>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.querySelectorAll('.lang').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+  </script>
+</body>
+</html>
